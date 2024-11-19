@@ -1,0 +1,33 @@
+---
+- name: Crear directorio base
+  file:
+    path: /tmp/2do_parcial
+    state: directory
+    mode: '0755'
+
+- name: Crear directorio alumno
+  file:
+    path: /tmp/2do_parcial/alumno
+    state: directory
+    mode: '0755'
+
+- name: Crear directorio equipo
+  file:
+    path: /tmp/2do_parcial/equipo
+    state: directory
+    mode: '0755'
+
+- name: Copiar plantilla para alumno
+  template:
+    src: datos_alumno.txt
+    dest: /tmp/2do_parcial/alumno/datos_alumno.txt
+
+- name: Copiar plantilla para equipo
+  template:
+    src: datos_equipo.txt
+    dest: /tmp/2do_parcial/equipo/datos_equipo.txt
+
+- name: Mostrar mensaje de depuración
+  debug:
+    msg: "Tareas del 2do Parcial completadas"
+

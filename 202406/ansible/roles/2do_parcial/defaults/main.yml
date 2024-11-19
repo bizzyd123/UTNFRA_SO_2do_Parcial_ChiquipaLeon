@@ -1,0 +1,9 @@
+# defaults/main.yml
+nombre: "Wendy"
+apellido: "Chiquipa Leon"
+division: "115"
+
+id: "192.168.56.3"
+Distribución: "Ubuntu 22.04.4 LTS: "
+CantidadCores: "2"
+

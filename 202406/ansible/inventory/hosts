@@ -1,0 +1,9 @@
+[all:children]
+testing
+produccion
+
+[testing]
+127.0.0.1 ansible_conection=local
+
+[produccion]
+localhost ansible_connection=local 
